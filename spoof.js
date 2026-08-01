@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 (async () => {
   // 1. Launch a visible browser instance
   const browser = await chromium.launch({ 
-    headless: false,
+    headless: true,
     args: ['--start-maximized'] 
   });
 
